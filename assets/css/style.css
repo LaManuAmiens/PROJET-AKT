@@ -1,1 +1,18 @@
-BACKFLIP
+#fondcategorie {
+  width : 100%;
+}
+.tprix{
+  font-size: 25px;
+  font-weight: bolder;
+  color: red;
+}
+.tdescription{
+  margin-top: 10%;
+  color: red;
+  font-weight: bolder;
+}
+.card{
+  border: 2px !important;
+  border-style: red;
+  margin-top: 10%;
+}
