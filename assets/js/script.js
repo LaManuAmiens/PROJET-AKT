@@ -23,42 +23,24 @@ home.config(['$routeProvider', function($routeProvider){
   })
 }]);
 
-//on crée un controller rattaché à notre object "home"
-home.controller('homeCtrl', ['$scope', '$rootScope', function ($scope, $rootScope){
-$scope.sendData = function (){
-//crée une variable qui sera accessible dans tout le document
-    $rootScope.subjectList.push($scope.subject);
-    $rootScope.nameList.push($scope.name);
-    $rootScope.emailList.push($scope.email);
-    $rootScope.textList.push($scope.text);
-    }
-}]);
-home.controller('epicerieCtrl',['$scope', '$rootScope', '$routeParams', function($scope, $rootScope, $routeParams){
-    $scope.id = $routeParams.id;
-    $scope.subject = $rootScope.subjectList[$scope.id];
-    $scope.name = $rootScope.nameList[$scope.id];
-    $scope.email = $rootScope.emailList[$scope.id];
-    $scope.text = $rootScope.textList[$scope.id];
-}]);
-
-angular.module('myApp', ['ngAnimate']);
+angular.module('testApp', ['ngAnimate']);
 
 angular.module('myApp')
 .controller('myController', function ($scope) {
 
   $scope.inventory = [
-    { id :  1, category : "water bottle", description : "small water bottle",   price :   2.99, qty : 1 },
-    { id :  2, category : "water bottle", description : "large water bottle",   price :   2.99, qty : 1, onSale : true },
-    { id :  3, category : "flashlight",   description : "small flashlight",     price :   6.99, qty : 1 },
-    { id :  4, category : "flashlight",   description : "big flashlight",       price :  12.99, qty : 1 },
-    { id :  5, category : "stove",        description : "small stove",          price :  29.99, qty : 1 },
-    { id :  6, category : "stove",        description : "big stove",            price :  29.99, qty : 1 },
-    { id :  7, category : "sleeping bag", description : "simple sleeping bag",  price :  49.99, qty : 1 },
-    { id :  8, category : "sleeping bag", description : "deluxe sleeping bag",  price :  79.99, qty : 1 },
-    { id :  9, category : "tent",         description : "1-person tent",        price : 119.99, qty : 1 },
-    { id : 10, category : "tent",         description : "2-person tent",        price : 169.99, qty : 1 },
-    { id : 11, category : "tent",         description : "3-person tent",        price : 249.99, qty : 1 },
-    { id : 12, category : "tent",         description : "4-person tent",        price : 319.99, qty : 1 }
+    { id : confiserie1, description : "Haribo Dragibus",   price :   1.90, qty : 1 },
+    { id : confiserie2, description : "Haribo Dragolo",   price :   1.90, qty : 1 },
+    { id : confiserie3, description : "Haribo Sunset",     price :   1.90, qty : 1 },
+    { id : confiserie4, description : "Haribo Happy",       price :  1.90, qty : 1 },
+    { id : cremerie1, description : "Comté 6 mois",          price :  21.90, qty : 1 },
+    { id : cremerie2, description : "Beaufort 6 mois d'affinage",            price :  24.90, qty : 1 },
+    { id : cremerie3, description : "St Marcelin",  price :  11.90, qty : 1 },
+    { id : cremerie4, description : "Bleu des Causses",  price :  17.90, qty : 1 },
+    { id : epicerie1, description : "Fois gras de canard entier",        price : 19.90, qty : 1 },
+    { id : epicerie2, description : "Cou de canard farci",        price : 2.90, qty : 1 },
+    { id : epicerie3, description : "Blé soufflet au miel",        price : 1.70, qty : 1 },
+    { id : epicerie4, description : "Riz et soja",        price : 1.70, qty : 1 }
   ];
 
   $scope.cart = [];
@@ -100,3 +82,6 @@ angular.module('myApp')
   };
 
 });
+
+
+category = osef
