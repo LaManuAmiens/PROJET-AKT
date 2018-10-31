@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<title>MANUPRIX.fr</title>
 </head>
-<body>
+<body ng-controller="myController">
 <div class="container-fluid">
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<a class="navbar-brand" href="#" id="manu"><strong>MANUPRIX.fr</strong></a>
@@ -30,13 +30,38 @@
 					<li class="nav-item">
 						<a class="nav-link" href="#!/confiserie">Confiserie	</a>
 					</li>
-					<li class="nav-item active justify-content-end">
+					<li class="nav-item">
+						<a class="nav-link" href="#" id="white">	</a>
+					</li>
+					<li class="nav-item active">
 						<a href="#"> <img id="panier" src="assets/img/panier.png"></a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 		<hr>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Panier</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Continuer les Achats</button>
+        <button type="button" class="btn btn-primary">Acheter</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 		<div ng-view></div>
 		<hr>
 		<footer>
