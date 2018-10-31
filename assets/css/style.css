@@ -1,1 +1,21 @@
-BACKFLIP
+#manu{
+  font-family: 'Liberation Serif';
+  color: red;
+  font-size: 250%;
+}
+.nav-link{
+  font-size: 150%;
+  font-family: 'FreeMono';
+}
+footer{
+background-color: #D3D3D3;
+}
+
+#pubFooter{
+  font-size: 70%;
+  text-align: center;
+  margin: 2%
+}
+#foot p {
+  margin-top: 10%;
+}

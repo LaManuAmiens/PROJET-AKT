@@ -1,67 +1,73 @@
-	<!DOCTYPE html>
-	<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-		<title>PROJET</title>
-	</head>
-	<body>
-		<div class="row">
-			<div class="col">
-				<img src="assets/img/tfondsouris.jpg" height="300px"/>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<title>MANUPRIX.fr</title>
+</head>
+<body>
+<div class="container-fluid">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand" href="#" id="manu"><strong>MANUPRIX.fr</strong></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#!/epicerie">Epicerie</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#!/cremerie">Cremerie</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#!/confiserie">Confiserie	</a>
+					</li>
+					<li class="nav-item active justify-content-end">
+						<a href="#"> <img id="panier" src="assets/img/panier.png"></a>
+					</li>
+				</ul>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4 d-flex justify-content-center">
-				<div class="card zoom" style="width: 21rem;">
-					<img class="card-img-top " src="assets\img\canard.gif" alt="Card image cap" height="330px">
-					<div class="card-body">
-						<div id="1">
-							<p><strong>produit 1</strong></p>
-							<p class="tprix">59.90 €</p>
-						</div>
-						<button type="button" class="btn btn-dark" >AJOUTER AU PANIER</button>
-						<p class="tdescription">ok</p>
-					</div>
+		</nav>
+		<hr>
+		<div ng-view></div>
+		<footer>
+			<div class="row" id="foot">
+				<div class="col-1"></div>
+				<div class="col-2">
+					<p>RETRAIT MAGASIN</p>
 				</div>
-			</div>
-			<div class="col-md-4 d-flex justify-content-center">
-				<div class="card zoom" style="width: 21rem;" id="zoom">
-					<img class="card-img-top" src="assets\img\canard1.jpg" alt="Card image cap" height="330px">
-					<div class="card-body">
-						<div id="2">
-							<p><strong>produit 2</strong></p>
-							<p class="tprix">34.90 €</p>
-						</div>
-						<button type="button" class="btn btn-dark">AJOUTER AU PANIER</button>
-						<p class="tdescription">ok1</p>
-					</div>
+				<div class="col-2"></div>
+				<div class="col-2">
+					<p>LIVRAISON OFFERTE</p>
 				</div>
-			</div>
-			<div class="col-md-4 d-flex justify-content-center">
-				<div class="card zoom" style="width: 21rem;">
-					<img class="card-img-top" src="assets\img\canard2.jpg" alt="Card image cap" height="330px">
-					<div class="card-body">
-						<div id="3">
-							<p><strong>produit 3</strong></p>
-							<p class="tprix">44.90 €</p>
-						</div>
-						<button type="button" class="btn btn-dark">AJOUTER AU PANIER</button>
-						<p class="tdescription">ok2</p>
-					</div>
+				<div class="col-2"></div>
+				<div class="col-2">
+					<p>PAIEMENT SECURISE</p>
 				</div>
+				<div class="col-1"></div>
 			</div>
-		</div>
-
-		<script>
-			src="https://code.jquery.com/jquery-3.3.1.js"
-			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-			crossorigin="anonymous"></script>
-			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-			<script src="assets/js/script.js"></script>
-		</body>
-		</html>
+			<div class="row" id="logo">
+				<div class="col-5"></div>
+				<div class="col-1">
+					<a href="https://fr-fr.facebook.com/Monoprix/" target="_blank"> <img src="assets/img/fb.png"></a>
+				</div>
+				<div class="col-1">
+					<a href="https://www.linkedin.com/company/monoprix?originalSubdomain=fr" target="_blank"> <img src="assets/img/in.png"></a>
+				</div>
+				<div class="col-5"></div>
+			</div>
+			<p id="pubFooter">Commandez vos produits préférés sur Monoprix.fr ! Nous sélectionnons nos produits selon des critères de qualité avant tout et essayons ainsi de vous proposer le meilleur choix possible au quotidien : Alimentation & Boissons, Hygiène & Beauté ainsi que Entretien & Maison, c'est une large gamme de plus de 15 000 produits livrés à domicile grâce à notre supermarché en ligne. Vous êtes fan des produits originaux ? alors n'hésitez plus, faites-vous plaisir avec des marques comme Michel et Augustin , Monoprix Gourmet, Toni&Guy ou bien encore Aussie que vous retrouvez en exclusivité chez Monoprix. Nous vous proposons également un rayon bébé complet avec tout pour l' alimentation de bébé mais aussi pour son hygiène, d'ailleurs nous vous proposons très souvent des réductions intéressantes sur ces produits notamment sur les couches Pampers. Si vous possédez La Carte Monoprix, vous pourrez également profiter de nombreuses promotions ainsi que d'avant-premières exclusives pour vous remercier de votre fidélité. Alors n'hésitez plus, faites vos courses en ligne et recevez chez vous votre commande le jour même grâce à la livraison à domicile ou bien optez pour le retrait en magasin avec le service Click & Collect. Pensez à Monoprix.fr pour faire votre shopping mode ! Découvrez les dernières tendances et profitez du plus large choix de couleurs et de tailles. Profitez en avant-première de nos collections créateurs et, tous les 15 jours, laissez-vous séduire par nos nouvelles collections : craquez donc pour une petite robe ou un ensemble de lingerie... En plus, vous bénéficiez de réductions exclusives tout au long de l'année : profitez-en pour relooker toute la famille avec nos vêtements pour homme mais aussi nos gammes Monoprix Kids pour les enfants et nos collections de vêtements bébé Bout'Chou. Pour la livraison, à vous de choisir : retirez gratuitement votre colis en magasin ou faites-vous livrer chez vous. De quoi rester en ligne avec vos envies de mode !
+			</p>
+		</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
