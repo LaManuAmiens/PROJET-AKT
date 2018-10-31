@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #slideshow-banner ul { position: relative; }
 
 #slideshow-banner ul .slideshow-item { position: absolute }
@@ -43,4 +44,26 @@
   background: #ccc;
   transform: rotateX(360deg);
   transition: transform 2s;
+=======
+#manu{
+  font-family: 'Liberation Serif';
+  color: red;
+  font-size: 250%;
+}
+.nav-link{
+  font-size: 150%;
+  font-family: 'FreeMono';
+}
+footer{
+background-color: #D3D3D3;
+}
+
+#pubFooter{
+  font-size: 70%;
+  text-align: center;
+  margin: 2%
+}
+#foot p {
+  margin-top: 10%;
+>>>>>>> Aline
 }
