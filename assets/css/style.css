@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #slideshow-banner ul { position: relative; }
 
 #slideshow-banner ul .slideshow-item { position: absolute }
@@ -66,4 +67,23 @@ background-color: #D3D3D3;
 #foot p {
   margin-top: 10%;
 >>>>>>> Aline
+=======
+#fondcategorie {
+  width : 100%;
+}
+.tprix{
+  font-size: 25px;
+  font-weight: bolder;
+  color: red;
+}
+.tdescription{
+  margin-top: 10%;
+  color: red;
+  font-weight: bolder;
+}
+.card{
+  border: 2px !important;
+  border-style: red;
+  margin-top: 10%;
+>>>>>>> Thomas
 }
