@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var home = angular.module('testApp', ['ngRoute']);
 
 home.config(['$routeProvider', function($routeProvider){
@@ -41,7 +40,7 @@ home.controller('epicerieCtrl',['$scope', '$rootScope', '$routeParams', function
     $scope.email = $rootScope.emailList[$scope.id];
     $scope.text = $rootScope.textList[$scope.id];
 }]);
-=======
+
 angular.module('myApp', ['ngAnimate']);
 
 angular.module('myApp')
@@ -101,4 +100,3 @@ angular.module('myApp')
   };
 
 });
->>>>>>> Thomas
