@@ -39,6 +39,10 @@ background-color: #D3D3D3;
   border-style: red;
   margin-top: 10%;
 }
+.custom-select{
+  width: 65%;
+  margin-bottom: 5%
+}
 @media all and (max-width:600px){
   #white{
     width: 0;
