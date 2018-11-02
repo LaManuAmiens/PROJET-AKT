@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr" ng-app="testApp">
+<html lang="fr" dir="ltr" ng-app="akt">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<title>MANUPRIX.fr</title>
 </head>
-<body>
+<body ng-controller='aktController'>
 	<div class="container-fluid">
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<a class="navbar-brand" href="#" id="manu"><strong>MANUPRIX.fr</strong></a>
@@ -50,8 +50,19 @@
 							<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
-					<div class="modal-body">
-						...
+					<div class="modal-body" ng-repeat="objet in objets">
+						{{epicerie1}}
+						{{epicerie2}}
+						{{epicerie3}}
+						{{epicerie4}}
+						{{confiserie1}}
+						{{confiserie2}}
+						{{confiserie3}}
+						{{confiserie4}}
+						{{cremerie1}}
+						{{cremerie2}}
+						{{cremerie3}}
+						{{cremerie4}}
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-secondary" data-dismiss="modal">Continuer les Achats</button>
