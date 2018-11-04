@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr" ng-app="akt">
+<html lang="fr" dir="ltr" ng-app="testApp">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,9 +8,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-route.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-animate.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta charset = "UTF-8" name = "viewport" content = "width=device-width, initial-scale=1" />
+	<link rel = "stylesheet" type = "text/css" href = "css/bootstrap.css"/>
 	<title>MANUPRIX.fr</title>
 </head>
-<body ng-controller='aktController'>
+<body>
 	<div class="container-fluid">
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<a class="navbar-brand" href="#" id="manu"><strong>MANUPRIX.fr</strong></a>
@@ -35,13 +37,14 @@
 						<a class="nav-link" href="#" id="white">	</a>
 					</li>
 					<li class="nav-item active">
-						<a href="#"> <img id="panier" src="assets/img/panier.png"></a>
+						<a href="#!/panier"> <img id="panier" src="assets/img/panier.png"></a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 		<hr>
 		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<a href="#!/panier">
 			<div class="modal-dialog modal-dialog-centered" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
@@ -50,19 +53,8 @@
 							<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
-					<div class="modal-body" ng-repeat="objet in objets">
-						{{epicerie1}}
-						{{epicerie2}}
-						{{epicerie3}}
-						{{epicerie4}}
-						{{confiserie1}}
-						{{confiserie2}}
-						{{confiserie3}}
-						{{confiserie4}}
-						{{cremerie1}}
-						{{cremerie2}}
-						{{cremerie3}}
-						{{cremerie4}}
+					<div class="modal-body">
+						...
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-secondary" data-dismiss="modal">Continuer les Achats</button>
@@ -71,6 +63,7 @@
 				</div>
 			</div>
 		</div>
+	</a>
 		<div ng-view></div>
 		<hr>
 		<footer>
@@ -99,7 +92,7 @@
 				</div>
 				<div class="col-5"></div>
 			</div>
-			<p id="pubFooter">Commandez vos produits préférés sur Monoprix.fr ! Nous sélectionnons nos produits selon des critères de qualité avant tout et essayons ainsi de vous proposer le meilleur choix possible au quotidien : Alimentation & Boissons, Hygiène & Beauté ainsi que Entretien & Maison, c'est une large gamme de plus de 15 000 produits livrés à domicile grâce à notre supermarché en ligne. Vous êtes fan des produits originaux ? alors n'hésitez plus, faites-vous plaisir avec des marques comme Michel et Augustin , Monoprix Gourmet, Toni&Guy ou bien encore Aussie que vous retrouvez en exclusivité chez Monoprix. Nous vous proposons également un rayon bébé complet avec tout pour l' alimentation de bébé mais aussi pour son hygiène, d'ailleurs nous vous proposons très souvent des réductions intéressantes sur ces produits notamment sur les couches Pampers. Si vous possédez La Carte Monoprix, vous pourrez également profiter de nombreuses promotions ainsi que d'avant-premières exclusives pour vous remercier de votre fidélité. Alors n'hésitez plus, faites vos courses en ligne et recevez chez vous votre commande le jour même grâce à la livraison à domicile ou bien optez pour le retrait en magasin avec le service Click & Collect. Pensez à Monoprix.fr pour faire votre shopping mode ! Découvrez les dernières tendances et profitez du plus large choix de couleurs et de tailles. Profitez en avant-première de nos collections créateurs et, tous les 15 jours, laissez-vous séduire par nos nouvelles collections : craquez donc pour une petite robe ou un ensemble de lingerie... En plus, vous bénéficiez de réductions exclusives tout au long de l'année : profitez-en pour relooker toute la famille avec nos vêtements pour homme mais aussi nos gammes Monoprix Kids pour les enfants et nos collections de vêtements bébé Bout'Chou. Pour la livraison, à vous de choisir : retirez gratuitement votre colis en magasin ou faites-vous livrer chez vous. De quoi rester en ligne avec vos envies de mode !
+			<p id="pubFooter">Commandez vos produits préférés sur Manunoprix.fr ! Nous sélectionnons nos produits selon des critères de qualité avant tout et essayons ainsi de vous proposer le meilleur choix possible au quotidien : Alimentation & Boissons, Hygiène & Beauté ainsi que Entretien & Maison, c'est une large gamme de plus de 15 000 produits livrés à domicile grâce à notre supermarché en ligne. Vous êtes fan des produits originaux ? alors n'hésitez plus, faites-vous plaisir avec des marques comme Michel et Augustin , Manunoprix Gourmet, Toni&Guy ou bien encore Aussie que vous retrouvez en exclusivité chez Manunoprix. Nous vous proposons également un rayon bébé complet avec tout pour l' alimentation de bébé mais aussi pour son hygiène, d'ailleurs nous vous proposons très souvent des réductions intéressantes sur ces produits notamment sur les couches Pampers. Si vous possédez La Carte Monoprix, vous pourrez également profiter de nombreuses promotions ainsi que d'avant-premières exclusives pour vous remercier de votre fidélité. Alors n'hésitez plus, faites vos courses en ligne et recevez chez vous votre commande le jour même grâce à la livraison à domicile ou bien optez pour le retrait en magasin avec le service Click & Collect. Pensez à Manunoprix.fr pour faire votre shopping mode ! Découvrez les dernières tendances et profitez du plus large choix de couleurs et de tailles. Profitez en avant-première de nos collections créateurs et, tous les 15 jours, laissez-vous séduire par nos nouvelles collections : craquez donc pour une petite robe ou un ensemble de lingerie... En plus, vous bénéficiez de réductions exclusives tout au long de l'année : profitez-en pour relooker toute la famille avec nos vêtements pour homme mais aussi nos gammes Monoprix Kids pour les enfants et nos collections de vêtements bébé Bout'Chou. Pour la livraison, à vous de choisir : retirez gratuitement votre colis en magasin ou faites-vous livrer chez vous. De quoi rester en ligne avec vos envies de mode !
 			</p>
 		</footer>
 	</div>

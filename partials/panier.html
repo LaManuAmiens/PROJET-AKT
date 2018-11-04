@@ -1,0 +1,47 @@
+
+<section ng-app = "myModule" ng-controller = "myController">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3" id = "p_list" ng-repeat = "product in products">
+				<div class="card" >
+					<img class="card-img-top" ng-src="{{product.p_image}}"  alt="Card image cap" >
+					<div class="card-body">
+						<h2 class="card-title">{{product.p_name}}</h2>
+					</div>
+					<p class="card-text">{{product.p_name}}</p>
+					<h5 class="card-text">{{product.p_description}}</h5>
+					<p class="card-text">{{product.p_price}}€</p>
+					<a href="#" class="btn btn-dark" ng-click="add_cart(product)"><span class = "glyphicon glyphicon-shopping-cart"></span>AJOUTER AU PANIER</a>
+				</div>
+			</div>
+		</div>
+	</div>
+<div class = "panel panel-primary">
+	<div class = "panel-heading">
+		<h5>Mon panier</h5>
+	</div>
+	<div class = "panel-body table-responsive">
+		<table class = "table">
+			<thead>
+				<tr>
+					<th>Produit</th>
+					<th>Prix</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat = "cart in carts" ng-init = "setTotals(cart)">
+					<td>{{cart.p_name}}</td>
+					<td>{{cart.p_price}}€</td>
+					<td><button type = "button" ng-click = "remove_cart(cart)" class = "btn btn-danger"><span class = "glyphicon glyphicon-remove"></span></button></td>
+				</tr>
+				<tr>
+					<td align = "right">Total</td>
+					<td>{{total}}€</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+</div>
+</section>

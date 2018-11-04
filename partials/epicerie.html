@@ -19,7 +19,7 @@
           <option value="2"> 2 </option>
           <option value="3"> 3 </option>
         </select>
-				<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">AJOUTER AU PANIER</button>
+				<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter"ng-click="add_cart(product)">AJOUTER AU PANIER</button>
         <p class="tdescription">Fois gras de canard entier pour les fins connaisseurs</p>
       </div>
     </div>
@@ -38,7 +38,7 @@
           <option value="2"> 2 </option>
           <option value="3"> 3 </option>
         </select>
-				<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">AJOUTER AU PANIER</button>
+				<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter" ng-click="add_cart(product)">AJOUTER AU PANIER</button>
         <p class="tdescription">Ça vaut le coup !</p>
       </div>
     </div>
@@ -48,7 +48,7 @@
       <img class="card-img-top" src="assets\img\epicerie3.jpg" alt="Card image cap" height="330px">
       <div class="card-body">
         <div id="epicerie3">
-          <p><strong>Blé souffle au miel</strong></p>
+          <p><strong>Blé soufflet au miel</strong></p>
           <p class="tprix">1.70 €</p>
         </div>
         <select class="custom-select" class="quantité">
@@ -57,7 +57,7 @@
           <option value="2"> 2 </option>
           <option value="3"> 3 </option>
         </select>
-				<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">AJOUTER AU PANIER</button>
+				<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter" ng-click="add_cart(product)">AJOUTER AU PANIER</button>
         <p class="tdescription">Parfait quand on est à bout de souffle !</p>
       </div>
     </div>
@@ -76,10 +76,9 @@
           <option value="2"> 2 </option>
           <option value="3"> 3 </option>
         </select>
-				<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">AJOUTER AU PANIER</button>
+				<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter" ng-click="add_cart(product)">AJOUTER AU PANIER</button>
         <p class="tdescription">Riz majestueux en bouche !</p>
       </div>
     </div>
   </div>
-</div>
-</div>
+  </div>
