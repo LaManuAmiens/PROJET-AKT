@@ -1,0 +1,62 @@
+[
+	{
+		"name":"Fois gras de canard entier",
+		"price": 19.90,
+		"description": "Fois gras de canard entier pour les fins connaisseurs", 
+	},
+	{
+		"name":"Cou de canard farci",
+		"price": 2.90,
+		"description": "Ça vaut le coup !",
+	},
+	{
+		"name":"Blé soufflet au miel",
+		"price": 1.70,
+		"description": "Parfait quand on est à bout de souffle !",
+	},
+	{
+		"name":"Riz et soja",
+		"price": 1.70,
+		"description": "Riz majestueux en bouche !",
+	},
+	{
+		"name":"Haribo Dragibus",
+		"price": 1.90,
+		"description": "500 grammes de plaisir pour les gourmands !",
+	},
+	{
+		"name":"Haribo Dragolo",
+		"price": 1.90,
+		"description": "500 grammes de plaisir pour rigoler !",
+	},
+	{
+		"name":"Haribo Sunset",
+		"price": 1.90,
+		"description": "500 grammes de plaisir pour booster votre journée !",
+	},
+	{
+		"name":"Haribo Happy",
+		"price": 1.90,
+		"description": "500 grammes de plaisir gustatifs !",
+	},
+	{
+		"name":"Comté 6 mois",
+		"price": 21.90,
+		"description": "Comté 6 mois d'affinage, 21.90 €/kilo",
+	},
+	{
+		"name":"Beaufort 6 mois d'affinage",
+		"price": 24.90,
+		"description": "Beaufort 6 mois d'affinage, 24.90 €/kilo",
+	},
+	{
+		"name":"St Marcelin",
+		"price": 11.90,
+		"description": "Fromage de chèvre, 11.90 €/kilo",
+	},
+	{
+		"name":"Bleu des Causses",
+		"price": 17.90,
+		"description": "Bleu des Causses, 11.90 €/kilos",
+	}
+]
