@@ -1,84 +1,28 @@
-
-<div class="row">
-  <div class="col-12">
-    <img src="assets/img/epicerie.png" height="500px" id="fondcategorie"/>
+<section ng-controller="epicerieCtrl">
+  <div class="row">
+    <div class="col-12">
+      <img src="assets/img/epicerie.png" height="500px" id="fondcategorie"/>
+    </div>
   </div>
-</div>
-<div class="row">
-  <div class="col-md-3 d-flex justify-content-center">
-    <div class="card zoom" style="width: 21rem;" id="zoom">
-      <img class="card-img-top " src="assets\img\epicerie1.jpg" alt="Card image cap" height="330px">
-      <div class="card-body">
-        <div id="epicerie1">
-          <p><strong>Fois gras de canard entier</strong></p>
-          <p class="tprix">19.90 €</p>
+  <div class="row">
+    <div class="col-md-3 d-flex justify-content-center" ng-repeat="product in products">
+      <div class="card zoom" style="width: 21rem;" id="zoom">
+        <img class="card-img-top" src="{{product.image}}" alt="Card image cap" height="330px">
+        <div class="card-body">
+          <div id="confiserie1">
+            <p><strong>{{product.name}}</strong></p>
+            <p class="tprix">{{product.price}}€</p>
+          </div>
+          <select class="custom-select" class="quantité">
+            <option value="0" selected>Quantité</option>
+            <option value="1"> 1 </option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3 </option>
+          </select>
+          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter" ng-click="addToCart()">AJOUTER AU PANIER</button>
+          <p class="tdescription">{{product.description}}</p>
         </div>
-        <select class="custom-select" class="quantité">
-          <option value="0" selected>Quantité</option>
-          <option value="1"> 1 </option>
-          <option value="2"> 2 </option>
-          <option value="3"> 3 </option>
-        </select>
-				<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter"ng-click="add_cart(product)">AJOUTER AU PANIER</button>
-        <p class="tdescription">Fois gras de canard entier pour les fins connaisseurs</p>
       </div>
     </div>
   </div>
-  <div class="col-md-3 d-flex justify-content-center">
-    <div class="card zoom" style="width: 21rem;" id="zoom">
-      <img class="card-img-top" src="assets\img\epicerie2.jpg" alt="Card image cap" height="330px">
-      <div class="card-body">
-        <div id="epicerie2">
-          <p><strong>Cou de canard farci</strong></p>
-          <p class="tprix">2.90 €</p>
-        </div>
-        <select class="custom-select" class="quantité">
-          <option value="0" selected>Quantité</option>
-          <option value="1"> 1 </option>
-          <option value="2"> 2 </option>
-          <option value="3"> 3 </option>
-        </select>
-				<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter" ng-click="add_cart(product)">AJOUTER AU PANIER</button>
-        <p class="tdescription">Ça vaut le coup !</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-3 d-flex justify-content-center">
-    <div class="card zoom" style="width: 21rem;" id="zoom">
-      <img class="card-img-top" src="assets\img\epicerie3.jpg" alt="Card image cap" height="330px">
-      <div class="card-body">
-        <div id="epicerie3">
-          <p><strong>Blé soufflet au miel</strong></p>
-          <p class="tprix">1.70 €</p>
-        </div>
-        <select class="custom-select" class="quantité">
-          <option value="0" selected>Quantité</option>
-          <option value="1"> 1 </option>
-          <option value="2"> 2 </option>
-          <option value="3"> 3 </option>
-        </select>
-				<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter" ng-click="add_cart(product)">AJOUTER AU PANIER</button>
-        <p class="tdescription">Parfait quand on est à bout de souffle !</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-3 d-flex justify-content-center">
-    <div class="card zoom" style="width: 21rem;" id="zoom">
-      <img class="card-img-top" src="assets\img\epicerie4.jpg" alt="Card image cap" height="330px">
-      <div class="card-body">
-        <div id="epicerie4">
-          <p><strong>Riz et soja</strong></p>
-          <p class="tprix">1.70 €</p>
-        </div>
-        <select class="custom-select" class="quantité">
-          <option value="0" selected>Quantité</option>
-          <option value="1"> 1 </option>
-          <option value="2"> 2 </option>
-          <option value="3"> 3 </option>
-        </select>
-				<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter" ng-click="add_cart(product)">AJOUTER AU PANIER</button>
-        <p class="tdescription">Riz majestueux en bouche !</p>
-      </div>
-    </div>
-  </div>
-  </div>
+</section>

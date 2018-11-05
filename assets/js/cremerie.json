@@ -1,0 +1,24 @@
+[{
+	"name":"Comté 6 mois",
+	"price": 21.90,
+	"description": "Comté 6 mois d'affinage, 21.90 €/kilo",
+	"image": "assets/img/cremerie1.jpg"
+},
+{
+	"name":"Beaufort 6 mois d'affinage",
+	"price": 24.90,
+	"description": "Beaufort 6 mois d'affinage, 24.90 €/kilo",
+	"image": "assets/img/cremerie2.jpg"
+},
+{
+	"name":"St Marcelin",
+	"price": 11.90,
+	"description": "Fromage de chèvre, 11.90 €/kilo",
+	"image": "assets/img/cremerie3.jpg"
+},
+{
+	"name":"Bleu des Causses",
+	"price": 17.90,
+	"description": "Bleu des Causses, 11.90 €/kilos",
+	"image": "assets/img/cremerie4.jpg"
+}]

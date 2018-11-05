@@ -1,0 +1,24 @@
+[{
+	"name":"Fois gras de canard entier",
+	"price": 19.90,
+	"description": "Fois gras de canard entier pour les fins connaisseurs",
+	"image": "assets/img/epicerie1.jpg"
+},
+{
+	"name":"Cou de canard farci",
+	"price": 2.90,
+	"description": "Ça vaut le coup !",
+	"image": "assets/img/epicerie2.jpg"
+},
+{
+	"name":"Blé soufflet au miel",
+	"price": 1.70,
+	"description": "Parfait quand on est à bout de souffle !",
+	"image": "assets/img/epicerie3.jpg"
+},
+{
+	"name":"Riz et soja",
+	"price": 1.70,
+	"description": "Riz majestueux en bouche !",
+	"image": "assets/img/epicerie4.jpg"
+}]

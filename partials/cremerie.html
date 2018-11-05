@@ -1,84 +1,28 @@
-
-<div class="row">
-  <div class="col-12">
-    <img src="assets/img/cremerie.png" height="500px" id="fondcategorie"/>
+<section ng-controller="cremerieCtrl">
+  <div class="row">
+    <div class="col-12">
+      <img src="assets/img/cremerie.png" height="500px" id="fondcategorie"/>
+    </div>
   </div>
-</div>
-<div class="row">
-  <div class="col-md-3 d-flex justify-content-center">
-    <div class="card zoom" style="width: 21rem;" id="zoom">
-      <img class="card-img-top " src="assets\img\cremerie1.jpg" alt="Card image cap" height="330px">
-      <div class="card-body">
-        <div id="cremerie1">
-          <p><strong>Comté 6 mois</strong></p>
-          <p class="tprix">21.90 €</p>
+  <div class="row">
+    <div class="col-md-3 d-flex justify-content-center" ng-repeat="product in products">
+      <div class="card zoom" style="width: 21rem;" id="zoom">
+        <img class="card-img-top" src="{{product.image}}" alt="Card image cap" height="330px">
+        <div class="card-body">
+          <div id="confiserie1">
+            <p><strong>{{product.name}}</strong></p>
+            <p class="tprix">{{product.price}}€</p>
+          </div>
+          <select class="custom-select" class="quantité">
+            <option value="0" selected>Quantité</option>
+            <option value="1"> 1 </option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3 </option>
+          </select>
+          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter" ng-click="addToCart()">AJOUTER AU PANIER</button>
+          <p class="tdescription">{{product.description}}</p>
         </div>
-        <select class="custom-select" class="quantité">
-          <option value="0" selected>Quantité</option>
-          <option value="1"> 1 </option>
-          <option value="2"> 2 </option>
-          <option value="3"> 3 </option>
-        </select>
-				<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter" ng-click="add_cart(product)">AJOUTER AU PANIER</button>
-        <p class="tdescription">Comté 6 mois d'affinage, 21.90 €/kilo</p>
       </div>
     </div>
   </div>
-  <div class="col-md-3 d-flex justify-content-center">
-    <div class="card zoom" style="width: 21rem;" id="zoom">
-      <img class="card-img-top" src="assets\img\cremerie2.jpg" alt="Card image cap" height="330px">
-      <div class="card-body">
-        <div id="cremerie2">
-          <p><strong>Beaufort 6 mois d'affinage</strong></p>
-          <p class="tprix">24.90 €</p>
-        </div>
-        <select class="custom-select" class="quantité">
-          <option value="0" selected>Quantité</option>
-          <option value="1"> 1 </option>
-          <option value="2"> 2 </option>
-          <option value="3"> 3 </option>
-        </select>
-				<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter" ng-click="add_cart(product)">AJOUTER AU PANIER</button>
-        <p class="tdescription">Beaufort 6 mois d'affinage, 24.90 €/kilo</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-3 d-flex justify-content-center">
-    <div class="card zoom" style="width: 21rem;" id="zoom">
-      <img class="card-img-top" src="assets\img\cremerie3.jpg" alt="Card image cap" height="330px">
-      <div class="card-body">
-        <div id="cremerie3">
-          <p><strong>St Marcelin</strong></p>
-          <p class="tprix">11.90 €</p>
-        </div>
-        <select class="custom-select" class="quantité">
-          <option value="0" selected>Quantité</option>
-          <option value="1"> 1 </option>
-          <option value="2"> 2 </option>
-          <option value="3"> 3 </option>
-        </select>
-				<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter" ng-click="add_cart(product)">AJOUTER AU PANIER</button>
-        <p class="tdescription">Fromage de chèvre, 11.90 €/kilo</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-3 d-flex justify-content-center">
-    <div class="card zoom" style="width: 21rem;" id="zoom">
-      <img class="card-img-top" src="assets\img\cremerie4.jpg" alt="Card image cap" height="330px">
-      <div class="card-body">
-        <div id="cremerie4">
-          <p><strong>Bleu des Causses</strong></p>
-          <p class="tprix">17.90 €</p>
-        </div>
-        <select class="custom-select" class="quantité">
-          <option value="0" selected>Quantité</option>
-          <option value="1"> 1 </option>
-          <option value="2"> 2 </option>
-          <option value="3"> 3 </option>
-        </select>
-				<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter" ng-click="add_cart(product)">AJOUTER AU PANIER</button>
-        <p class="tdescription">Bleu des Causses, 11.90 €/kilos</p>
-      </div>
-    </div>
-  </div>
-</div>
+</section>

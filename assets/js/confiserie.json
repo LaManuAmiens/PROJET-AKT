@@ -1,0 +1,24 @@
+[{
+	"name":"Haribo Dragibus",
+	"price": 1.90,
+	"description": "500 grammes de plaisir pour les gourmands !",
+	"image": "assets/img/bonbon1.jpg"
+},
+{
+	"name":"Haribo Dragolo",
+	"price": 1.90,
+	"description": "500 grammes de plaisir pour rigoler !",
+	"image": "assets/img/bonbon2.jpg"
+},
+{
+	"name":"Haribo Sunset",
+	"price": 1.90,
+	"description": "500 grammes de plaisir pour booster votre journée !",
+	"image": "assets/img/bonbon2.jpg"
+},
+{
+	"name":"Haribo Happy",
+	"price": 1.90,
+	"description": "500 grammes de plaisir gustatifs !",
+	"image": "assets/img/bonbon3.jpg"
+}]
