@@ -43,8 +43,8 @@ home.controller("epicerieCtrl", function($scope, $http){
   $http.get('assets/js/epicerie.json').then(function(res){
     $scope.products = res.data;
   });
-});
 
-$scope.addToCart = function() {
-  console.log("products");
-}
+  $scope.addToCart = function($scope) {
+    console.log($scope);
+  }
+});
